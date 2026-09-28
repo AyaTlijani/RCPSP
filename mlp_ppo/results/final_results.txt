@@ -1,0 +1,65 @@
+RCPSP MLP-PPO EVALUATION RESULTS
+================================
+
+Evaluation protocol:
+- Test set: 48 held-out instances per dataset
+- Policies: Random, SPT, MLP-PPO
+- MLP-PPO uses the best validation checkpoint
+- Lower makespan is better
+
+================================
+
+J30
+------------------------------
+Test instances: 48
+Random mean makespan: 62.44
+SPT mean makespan: 62.85
+MLP-PPO mean makespan: 61.81
+
+MLP-PPO reduction vs Random: 1.00%
+MLP-PPO reduction vs SPT: 1.66%
+
+MLP-PPO better than Random: 14/48
+MLP-PPO better than SPT: 18/48
+MLP-PPO better than both: 8/48
+
+
+J60
+------------------------------
+Test instances: 48
+Random mean makespan: 87.12
+SPT mean makespan: 86.77
+MLP-PPO mean makespan: 85.83
+
+MLP-PPO reduction vs Random: 1.48%
+MLP-PPO reduction vs SPT: 1.08%
+
+MLP-PPO better than Random: 19/48
+MLP-PPO better than SPT: 20/48
+MLP-PPO better than both: 14/48
+
+
+J90
+------------------------------
+Test instances: 48
+Random mean makespan: 100.08
+SPT mean makespan: 102.04
+MLP-PPO mean makespan: 99.21
+
+MLP-PPO reduction vs Random: 0.87%
+MLP-PPO reduction vs SPT: 2.78%
+
+MLP-PPO better than Random: 18/48
+MLP-PPO better than SPT: 23/48
+MLP-PPO better than both: 13/48
+
+
+================================
+COMPACT COMPARISON
+================================
+
+Dataset | Random | SPT | MLP-PPO | vs Random | vs SPT
+---------------------------------------------------------------------------
+J30     |  62.44 | 62.85 |   61.81 |      1.00% |   1.66%
+J60     |  87.12 | 86.77 |   85.83 |      1.48% |   1.08%
+J90     | 100.08 | 102.04 |   99.21 |      0.87% |   2.78%
