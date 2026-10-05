@@ -15,10 +15,14 @@ from agent import RCPSPPPOAgent
 # CONFIG
 # ============================================================
 
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+DATA_ROOT = PROJECT_ROOT / "data"
+CHECKPOINT_ROOT = Path(__file__).resolve().parent / "checkpoints"
+OUTPUT_FILE = Path(__file__).resolve().parent / "evaluation_results.txt"
+
 DATASETS = ["j30", "j60", "j90"]
 SEED = 1
 SAMPLE_SIZE = 6
-OUTPUT_FILE = "evaluation_results.txt"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 random.seed(SEED)
@@ -102,8 +106,8 @@ def run_ppo(agent, project, resource_ids, device):
 # ============================================================
 
 def evaluate_dataset(dataset: str, f) -> dict | None:
-    data_folder = Path("data") / dataset
-    model_path = Path("checkpoints") / dataset / f"agent_{dataset}_final.pt"
+    data_folder = DATA_ROOT / dataset
+    model_path = CHECKPOINT_ROOT / dataset / f"agent_{dataset}_final.pt"
 
     if not model_path.exists():
         f.write("=" * 60 + "\n")

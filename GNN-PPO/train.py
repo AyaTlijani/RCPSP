@@ -2,6 +2,7 @@ import os
 import random
 import time
 from collections import deque
+from pathlib import Path
 
 import numpy as np
 import torch
@@ -12,6 +13,10 @@ from loader import RCPSPLoader
 from graph_representation import RCPSPGraphBuilder
 from environment import RCPSPEnvironment
 from agent import RCPSPPPOAgent
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+DATA_ROOT = PROJECT_ROOT / "data"
+CHECKPOINT_ROOT = Path(__file__).resolve().parent / "checkpoints"
 
 # only train + test, no validation split
 DATASETS = ["j30", "j60", "j90"]
@@ -243,8 +248,8 @@ for DATASET in DATASETS:
     print(f"  STARTING DATASET: {DATASET.upper()}")
     print("=" * 70)
 
-    DATA_FOLDER = os.path.join("data", DATASET)
-    CHECKPOINT_DIR = os.path.join("checkpoints", DATASET)
+    DATA_FOLDER = DATA_ROOT / DATASET
+    CHECKPOINT_DIR = CHECKPOINT_ROOT / DATASET
     os.makedirs(CHECKPOINT_DIR, exist_ok=True)
 
     loader = RCPSPLoader(DATA_FOLDER, seed=SEED)
@@ -342,7 +347,7 @@ for DATASET in DATASETS:
     print("-" * 50)
 
     # only keep the final model, no intermediate checkpoints
-    final_path = os.path.join(CHECKPOINT_DIR, f"agent_{DATASET}_final.pt")
+    final_path = CHECKPOINT_DIR / f"agent_{DATASET}_final.pt"
     torch.save(agent.state_dict(), final_path)
     print(f"Final model saved: {final_path}")
 
