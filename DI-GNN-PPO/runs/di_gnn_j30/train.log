@@ -1,0 +1,33 @@
+======================================================================
+DI-GNN-PPO | J30 | PPO update on cuda, rollouts on cpu | run=C:\Users\MSI\Desktop\RCPSP-RL\DI-GNN-PPO\runs\di_gnn_j30
+Node feature dimension: 27
+======================================================================
+Loaded 480 instances | train=384 val=48 test=48
+Parameters: 617378
+Update 0 | validation makespan = 68.750  -> saved best checkpoint
+Update    1 | Episodes    32/8000 | Makespan   67.91 | Policy  -0.0010 | Value  1.0298 | Entropy 0.4612 | KL  0.00033 | Clip 0.016 | EV  0.118 |    0.1 min
+Update    2 | Episodes    64/8000 | Makespan   62.62 | Policy  -0.0000 | Value  0.1757 | Entropy 0.4685 | KL  0.00013 | Clip 0.001 | EV  0.707 |    0.1 min
+Update    3 | Episodes    96/8000 | Makespan   65.62 | Policy  -0.0024 | Value  0.0816 | Entropy 0.4464 | KL  0.00071 | Clip 0.036 | EV  0.842 |    0.3 min
+Update    4 | Episodes   128/8000 | Makespan   63.72 | Policy  -0.0029 | Value  0.0391 | Entropy 0.4409 | KL  0.00075 | Clip 0.040 | EV  0.925 |    0.4 min
+Update    5 | Episodes   160/8000 | Makespan   64.62 | Policy  -0.0029 | Value  0.0396 | Entropy 0.4443 | KL  0.00051 | Clip 0.026 | EV  0.928 |    0.5 min
+  Validation: 66.562
+  -> saved best checkpoint
+Update    6 | Episodes   192/8000 | Makespan   61.12 | Policy  -0.0047 | Value  0.0164 | Entropy 0.4530 | KL  0.00085 | Clip 0.048 | EV  0.968 |    0.8 min
+Update    7 | Episodes   224/8000 | Makespan   65.38 | Policy  -0.0024 | Value  0.0290 | Entropy 0.4539 | KL  0.00087 | Clip 0.045 | EV  0.950 |    1.1 min
+Update    8 | Episodes   256/8000 | Makespan   64.50 | Policy  -0.0034 | Value  0.0229 | Entropy 0.4532 | KL  0.00086 | Clip 0.046 | EV  0.957 |    1.3 min
+Update    9 | Episodes   288/8000 | Makespan   68.03 | Policy  -0.0060 | Value  0.0252 | Entropy 0.4316 | KL  0.00121 | Clip 0.068 | EV  0.952 |    1.5 min
+Update   10 | Episodes   320/8000 | Makespan   69.41 | Policy  -0.0065 | Value  0.0157 | Entropy 0.4881 | KL  0.00137 | Clip 0.075 | EV  0.970 |    1.7 min
+  Validation: 66.958
+Update   11 | Episodes   352/8000 | Makespan   66.91 | Policy  -0.0053 | Value  0.0148 | Entropy 0.4597 | KL  0.00108 | Clip 0.063 | EV  0.972 |    2.1 min
+Update   12 | Episodes   384/8000 | Makespan   63.47 | Policy  -0.0052 | Value  0.0155 | Entropy 0.4539 | KL  0.00112 | Clip 0.064 | EV  0.971 |    2.3 min
+Update   13 | Episodes   416/8000 | Makespan   64.22 | Policy  -0.0061 | Value  0.0153 | Entropy 0.4420 | KL  0.00117 | Clip 0.066 | EV  0.972 |    2.4 min
+Update   14 | Episodes   448/8000 | Makespan   66.44 | Policy  -0.0057 | Value  0.0116 | Entropy 0.4586 | KL  0.00114 | Clip 0.067 | EV  0.978 |    2.5 min
+Update   15 | Episodes   480/8000 | Makespan   61.38 | Policy  -0.0067 | Value  0.0116 | Entropy 0.4866 | KL  0.00203 | Clip 0.105 | EV  0.978 |    2.7 min
+  Validation: 66.979
+Update   16 | Episodes   512/8000 | Makespan   64.25 | Policy  -0.0052 | Value  0.0136 | Entropy 0.4310 | KL  0.00133 | Clip 0.077 | EV  0.975 |    3.0 min
+Update   17 | Episodes   544/8000 | Makespan   64.41 | Policy  -0.0058 | Value  0.0160 | Entropy 0.4829 | KL  0.00196 | Clip 0.104 | EV  0.970 |    3.2 min
+Update   18 | Episodes   576/8000 | Makespan   65.75 | Policy  -0.0066 | Value  0.0158 | Entropy 0.4200 | KL  0.00155 | Clip 0.093 | EV  0.970 |    3.4 min
+Update   19 | Episodes   608/8000 | Makespan   64.69 | Policy  -0.0081 | Value  0.0135 | Entropy 0.4590 | KL  0.00187 | Clip 0.103 | EV  0.974 |    3.6 min
+Update   20 | Episodes   640/8000 | Makespan   68.84 | Policy  -0.0081 | Value  0.0110 | Entropy 0.4324 | KL  0.00240 | Clip 0.122 | EV  0.980 |    3.9 min
+  Validation: 65.479
+  -> saved best checkpoint

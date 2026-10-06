@@ -1,0 +1,7 @@
+J30 | test=48 | checkpoint=C:\Users\MSI\Desktop\RCPSP-RL\DI-GNN-PPO\runs\di_gnn_j30\best.pt
+DI-GNN-PPO             n=48  mean=   61.29  median=   57.50  std=  15.99  min=   34.0  max=  116.0
+Random                 n=48  mean=   64.12  median=   58.50  std=  18.33  min=   34.0  max=  120.0
+SPT                    n=48  mean=   63.90  median=   60.00  std=  17.18  min=   34.0  max=  117.0
+LFT                    n=48  mean=   61.17  median=   58.00  std=  16.09  min=   34.0  max=  112.0
+GRPW                   n=48  mean=   63.06  median=   58.00  std=  17.99  min=   34.0  max=  114.0
+

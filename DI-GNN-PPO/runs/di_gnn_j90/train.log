@@ -1,0 +1,12 @@
+======================================================================
+DI-GNN-PPO | J90 | PPO update on cuda, rollouts on cpu | run=C:\Users\MSI\Desktop\RCPSP-RL\DI-GNN-PPO\runs\di_gnn_j90
+Node feature dimension: 27
+======================================================================
+Loaded 480 instances | train=384 val=48 test=48
+Parameters: 617378
+Update 0 | validation makespan = 108.438  -> saved best checkpoint
+Update    1 | Episodes    32/8000 | Makespan  110.22 | Policy  -0.0009 | Value  0.2896 | Entropy 0.6662 | KL  0.00039 | Clip 0.013 | EV  0.409 |    0.6 min
+Update    2 | Episodes    64/8000 | Makespan  102.75 | Policy  -0.0010 | Value  0.1642 | Entropy 0.6239 | KL  0.00049 | Clip 0.020 | EV  0.758 |    1.6 min
+Update    3 | Episodes    96/8000 | Makespan   99.31 | Policy  -0.0020 | Value  0.0443 | Entropy 0.6198 | KL  0.00071 | Clip 0.033 | EV  0.923 |    2.3 min
+Update    4 | Episodes   128/8000 | Makespan  107.41 | Policy  -0.0019 | Value  0.0206 | Entropy 0.6504 | KL  0.00083 | Clip 0.039 | EV  0.965 |    3.0 min
+Update    5 | Episodes   160/8000 | Makespan  104.53 | Policy  -0.0028 | Value  0.0142 | Entropy 0.6662 | KL  0.00096 | Clip 0.049 | EV  0.973 |    3.8 min

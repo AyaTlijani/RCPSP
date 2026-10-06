@@ -1,0 +1,7 @@
+problem_size,method,num_test_instances,mean_makespan,median_makespan,std_makespan,min_makespan,max_makespan,samples,seed,checkpoint,best_val_mean_makespan
+j30,DI-GNN-PPO Greedy,48,61.2917,57.5,15.9893,34.0,116.0,,1,C:\Users\MSI\Desktop\RCPSP-RL\DI-GNN-PPO\runs\di_gnn_j30\best.pt,64.89583333333333
+j30,DI-GNN-PPO Sampling-20,48,60.0833,57.0,14.8494,34.0,113.0,20,1,C:\Users\MSI\Desktop\RCPSP-RL\DI-GNN-PPO\runs\di_gnn_j30\best.pt,64.89583333333333
+j30,Random,48,64.125,58.5,18.3299,34.0,120.0,,1,,
+j30,SPT,48,63.8958,60.0,17.1839,34.0,117.0,,1,,
+j30,LFT,48,61.1667,58.0,16.0946,34.0,112.0,,1,,
+j30,GRPW,48,63.0625,58.0,17.9922,34.0,114.0,,1,,

@@ -1,0 +1,17 @@
+======================================================================
+DI-GNN-PPO | J60 | PPO update on cuda, rollouts on cpu | run=C:\Users\MSI\Desktop\RCPSP-RL\DI-GNN-PPO\runs\di_gnn_j60
+Node feature dimension: 27
+======================================================================
+Loaded 480 instances | train=384 val=48 test=48
+Parameters: 617378
+Update 0 | validation makespan = 90.792  -> saved best checkpoint
+Update    1 | Episodes    32/8000 | Makespan   94.38 | Policy  -0.0011 | Value  0.5816 | Entropy 0.5680 | KL  0.00039 | Clip 0.014 | EV  0.290 |    0.2 min
+Update    2 | Episodes    64/8000 | Makespan   90.56 | Policy  -0.0023 | Value  0.1486 | Entropy 0.5602 | KL  0.00072 | Clip 0.033 | EV  0.764 |    0.6 min
+Update    3 | Episodes    96/8000 | Makespan   87.12 | Policy  -0.0033 | Value  0.0442 | Entropy 0.6103 | KL  0.00085 | Clip 0.043 | EV  0.921 |    1.1 min
+Update    4 | Episodes   128/8000 | Makespan   86.47 | Policy  -0.0041 | Value  0.0176 | Entropy 0.5865 | KL  0.00108 | Clip 0.060 | EV  0.969 |    1.7 min
+Update    5 | Episodes   160/8000 | Makespan   95.56 | Policy  -0.0045 | Value  0.0131 | Entropy 0.5607 | KL  0.00107 | Clip 0.059 | EV  0.975 |    2.2 min
+  Validation: 90.021
+  -> saved best checkpoint
+Update    6 | Episodes   192/8000 | Makespan   93.16 | Policy  -0.0041 | Value  0.0088 | Entropy 0.5905 | KL  0.00131 | Clip 0.075 | EV  0.983 |    2.8 min
+Update    7 | Episodes   224/8000 | Makespan   98.59 | Policy  -0.0033 | Value  0.0104 | Entropy 0.5319 | KL  0.00080 | Clip 0.036 | EV  0.980 |    3.2 min
+Update    8 | Episodes   256/8000 | Makespan   94.34 | Policy  -0.0041 | Value  0.0085 | Entropy 0.5732 | KL  0.00098 | Clip 0.052 | EV  0.984 |    3.7 min
